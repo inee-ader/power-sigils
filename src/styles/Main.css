@@ -1,0 +1,63 @@
+
+.main {
+    background-color: black; 
+    height: 100vh;
+    padding: 100px;
+}
+
+.main__p, .main__h {
+    color: tan;
+    font-family: 'Srisakdi';
+}
+
+.main__h {
+    font-size: 30px;
+}
+
+.main__p {
+    font-size: 30px;
+}
+
+.main__textarea {
+    background-color: black; 
+    border: 3.5px solid rgba(240, 54, 54, 0.89);
+    color: tan; 
+    font-size: 50px;
+    outline: none;
+    padding: 20px;
+    font-family: 'Calligraffitti';
+    border-radius: 5px;
+    resize: none;
+    min-height: 20%;
+    /* line-height: 10%; */
+    width: 90%;
+    letter-spacing: 5px;
+    /* overflow: hidden;  */
+}
+.main__textarea::placeholder{
+    color: rgba(210, 180, 140, 0.473);
+}
+
+.main__button {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black; 
+    color: gray;
+    margin: 30px;
+    border-radius: 5px;
+    border: 1px solid tan;
+    outline: none; 
+    cursor: pointer;
+    font-family: 'Srisakdi';
+    font-weight: bold;
+}
+.main__button:hover {
+    color: tan;
+}
+
+.main__glyphs {
+    border: 1px solid white;
+}
