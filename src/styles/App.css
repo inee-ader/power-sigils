@@ -4,7 +4,7 @@
 
 .app__header {
   background-color: #282c34;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,6 +16,7 @@
 .app__logo {
   height: 10vmin;
   pointer-events: none;
+  margin: 30px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .app__logo {
@@ -34,4 +35,5 @@
 .app__h {
   font-size: 60px;
   color: tan; 
+  margin: 30px;
 }

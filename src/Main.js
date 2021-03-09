@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './styles/Main.css'
 import Letter from './Letter'
 
+
 class Main extends Component {
 
     state = {
@@ -24,19 +25,11 @@ class Main extends Component {
         })
     }
 
-    startOver = () => {
+    startOverHandler = () => {
         this.setState({
             input: '', 
             output: ''
         })
-    }
-
-    renderOutput = () => {
-        if (this.state.output.length) {
-            this.state.output.map((letter, index) => {
-                return <Letter letter={letter} key={index} />
-            })
-        }
     }
 
     render() {
@@ -60,10 +53,10 @@ class Main extends Component {
                 >Process sigil</button>
                 <button 
                     className='main__button'
-                    onClick={() => this.startOver()}
+                    onClick={() => this.startOverHandler()}
                 >Start over</button>
-                <div className='main__glyphs'>
-                    {this.renderOutput()}
+                <div>
+                    {this.state.output.length}
                 </div>
             </div>
         );
