@@ -13,6 +13,9 @@ class App extends Component {
           <h1 className='app__h'>POWER SIGILS</h1>
         </header>
         <Main />
+        <footer className='app__footer'>
+          <p>Your sigil can be printed on objects, carved into candles, written on your skin, or otherwise used for good intentions or affirmations.</p>
+        </footer>
       </div>
     );
   }

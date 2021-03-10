@@ -6,6 +6,11 @@
     background-attachment: fixed;
     height: auto;
 }
+@media (min-width: 768px) {
+    .main {
+        height: auto;
+    }
+}
 @media (max-width: 768px) {
     .main {
         padding: 30px;
@@ -138,6 +143,7 @@
     padding: 20px;
     color: rgba(240, 54, 54, 0.89);
     display: flex;
+    overflow-x: hidden;
     flex-wrap: wrap;
     justify-content: center;
 }

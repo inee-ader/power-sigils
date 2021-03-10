@@ -4,19 +4,21 @@
 
 .app__header {
   background-color: #282c34;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   color: white;
   font-family: 'Megrim';
+  letter-spacing: 20px;
+  border-bottom: 2px solid rgba(240, 54, 54, 0.89);
 }
 
 .app__logo {
   height: 10vmin;
   pointer-events: none;
-  margin: 30px;
+  margin: 15px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .app__logo {
@@ -30,6 +32,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app__footer {
+  background-color: #282c34;
+  padding: 20px;
+  border-top: 2px solid rgba(240, 54, 54, 0.89);
+  color: tan;
+  font-family: 'Megrim';
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .app__h {

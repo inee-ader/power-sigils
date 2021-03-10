@@ -47,6 +47,7 @@ class Main extends Component {
                 <h3 className='main__h'>Sigils are a powerful way to set your intentions and manifest your desires.</h3>
                 <p className='main__p'>Start by forming a present-tense statement for what you want to call in...</p>
                 <p className='main__p'>Keep it simple and use strong words...</p>
+                <br></br>
                 
                 <textarea 
                     className='main__textarea' 
@@ -58,12 +59,12 @@ class Main extends Component {
                 <button 
                     className='main__button'
                     onClick={() => this.processOutput()}
-                >Process sigil</button>
+                >Process</button>
               
                 <button 
                     className='main__button'
                     onClick={() => this.startOverHandler()}
-                >Start over</button>
+                >Reset</button>
 
                 <p className='main__p'>...you are left with the paramount letters to your affirmation</p>
                 <h2 className='main__letters'>
