@@ -8,10 +8,28 @@
     cursor: crosshair;
     border-radius: 10px;
     margin: 10px;
-    font-family: 'Calligraffitti'
-}
-
-.letter__h {
-    font-size: 200%;
+    font-family: 'Calligraffitti'; 
+    font-size: 60px;
     text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .letter {
+        font-size: 50px;
+        padding: 18px;
+    }
+}
+@media (max-width: 540px) {
+    .letter {
+        font-size: 35px;
+        padding: 15px;
+    }
+}
+@media (max-width: 320px) {
+    .letter {
+        font-size: 25px;
+        padding: 12px;
+    }
 }
