@@ -140,7 +140,7 @@
     font-family: 'Calligraffitti';
     letter-spacing: 30px;
     font-size: 50px;
-    padding: 20px;
+    /* padding: 20px; */
     color: rgba(240, 54, 54, 0.89);
     display: flex;
     overflow-x: hidden;

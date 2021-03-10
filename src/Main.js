@@ -69,6 +69,7 @@ class Main extends Component {
                 <p className='main__p'>...you are left with the paramount letters to your affirmation</p>
                 <h2 className='main__letters'>
                     {this.state.output}
+                    <br></br>
                 </h2>
                 <p className='main__p'>...draw a single glyph that incorporates the remaining letters</p>
             </div>
