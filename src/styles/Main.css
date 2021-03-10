@@ -1,8 +1,7 @@
 
 .main {
     background-color: black; 
-    /* height: 100vh; */
-    padding: 100px;
+    padding: 50px;
 }
 
 .main__p, .main__h {

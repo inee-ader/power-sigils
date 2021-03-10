@@ -69,11 +69,12 @@ class Main extends Component {
                 >Start over</button>
 
                 <br></br>
-                <p className='main__p'>...first remove the vowels</p>
-                <p className='main__p'>...then remove the repeated consonants</p>
+                <p className='main__p'>...first remove all the vowels</p>
+                <p className='main__p'>...then remove all the repeated consonants</p>
                 <div className='main__glyphs'>
                     {this.renderLetters()}
                 </div>
+                <p className='main__p'>...now draw a symbol that incorporates the remaining letters</p>
             </div>
         );
     }
