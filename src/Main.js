@@ -45,8 +45,8 @@ class Main extends Component {
         return (
             <div className='main'>
                 <h3 className='main__h'>Sigils are a powerful way to set your intentions and manifest your desires.</h3>
-                <p className='main__p'>Start by forming a present-tense statement for what you want to call in...</p>
-                <p className='main__p'>Keep it simple and use strong words...</p>
+                <p className='main__p'>Start by forming a present-tense statement for an intention or affirmation...</p>
+                <p className='main__p'>Write it simply and in positive terms...</p>
                 <br></br>
                 
                 <textarea 
@@ -66,12 +66,12 @@ class Main extends Component {
                     onClick={() => this.startOverHandler()}
                 >Reset</button>
 
-                <p className='main__p'>...you are left with the paramount letters to your affirmation</p>
+                <p className='main__p'>...the paramount letters remain</p>
                 <h2 className='main__letters'>
                     {this.state.output}
                     <br></br>
                 </h2>
-                <p className='main__p'>...draw a single glyph that incorporates the remaining letters</p>
+                <p className='main__p'>...craft a single glyph that incorporates these letters</p>
             </div>
         );
     }
