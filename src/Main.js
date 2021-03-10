@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './styles/Main.css'
-import Letter from './Letter'
 
 
 class Main extends Component {
@@ -17,11 +16,21 @@ class Main extends Component {
     }
 
     processOutput = () => {
-        let intention = this.state.input
-        let output = intention.split('').filter(char => char !== ' ')
-        this.setState({
-            output: output
-        })
+        let string = this.state.input
+        let letterObj = {}, 
+            newString = '', 
+            regex = /[aeiou\s\W]/i
+        for (let i = 0; i < string.length; i++) {
+            let currentChar = string[i].toUpperCase()
+            if (!regex.test(currentChar) && !letterObj[currentChar]){
+                newString += currentChar
+                letterObj[currentChar] = 1
+            }else if (!regex.test(currentChar)){
+                letterObj[currentChar] += 1
+            }
+        }
+        console.log(newString)
+        this.setState({output: newString})
     }
 
     startOverHandler = () => {
@@ -30,19 +39,6 @@ class Main extends Component {
             output: []
         })
     }
-
-    renderLetters = () => {
-        return this.state.output.map((letter, index) => {
-            return <Letter letter={letter.toUpperCase()} key={index} click={() => this.deleteLetter(index)}/>
-          });
-    }
-
-    deleteLetter = (letterIndex) => {
-        const letters = [...this.state.output]
-        letters.splice(letterIndex, 1)
-        this.setState({output: letters})
-    }
-
 
     render() {
 
@@ -63,18 +59,17 @@ class Main extends Component {
                     className='main__button'
                     onClick={() => this.processOutput()}
                 >Process sigil</button>
+              
                 <button 
                     className='main__button'
                     onClick={() => this.startOverHandler()}
                 >Start over</button>
 
-                <br></br>
-                <p className='main__p'>...first remove all the vowels</p>
-                <p className='main__p'>...then remove all the repeated consonants</p>
-                <div className='main__glyphs'>
-                    {this.renderLetters()}
-                </div>
-                <p className='main__p'>...now draw a symbol that incorporates the remaining letters</p>
+                <p className='main__p'>...you are left with the paramount letters to your affirmation</p>
+                <h2 className='main__letters'>
+                    {this.state.output}
+                </h2>
+                <p className='main__p'>...draw a single glyph that incorporates the remaining letters</p>
             </div>
         );
     }
