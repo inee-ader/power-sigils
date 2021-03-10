@@ -1,7 +1,14 @@
 
 .letter {
-    padding: 20px;
-    color: red;
-    font-size: 30px;
-    background-color: pink;
+    /* padding: 20px; */
+    color: black;
+    background-color: tan;
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+.letter__h {
+    font-size: 60px;
+    text-align: center;
 }

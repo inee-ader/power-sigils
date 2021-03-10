@@ -7,7 +7,7 @@ class Main extends Component {
 
     state = {
         input: '', 
-        output: ''
+        output: []
     }
 
     inputChangeHandler = (e) => {
@@ -19,7 +19,6 @@ class Main extends Component {
     processOutput = () => {
         let intention = this.state.input
         let output = intention.split('').filter(char => char !== ' ')
-        
         this.setState({
             output: output
         })
@@ -28,9 +27,22 @@ class Main extends Component {
     startOverHandler = () => {
         this.setState({
             input: '', 
-            output: ''
+            output: []
         })
     }
+
+    renderLetters = () => {
+        return this.state.output.map((letter, index) => {
+            return <Letter letter={letter.toUpperCase()} key={index} click={() => this.deleteLetter(index)}/>
+          });
+    }
+
+    deleteLetter = (letterIndex) => {
+        const letters = [...this.state.output]
+        letters.splice(letterIndex, 1)
+        this.setState({output: letters})
+    }
+
 
     render() {
 
@@ -55,8 +67,12 @@ class Main extends Component {
                     className='main__button'
                     onClick={() => this.startOverHandler()}
                 >Start over</button>
-                <div>
-                    {this.state.output.length}
+
+                <br></br>
+                <p className='main__p'>...first remove the vowels</p>
+                <p className='main__p'>...then remove the repeated consonants</p>
+                <div className='main__glyphs'>
+                    {this.renderLetters()}
                 </div>
             </div>
         );
