@@ -11,7 +11,7 @@ class App extends Component {
         <header className="app__header">
           <img src={uranus} className="app__logo" alt="Symbol for Uranus" />
           <h1 className='app__h'>
-            POWER SIGILS
+            <span>P</span><span>W</span><span>R</span><span>S</span><span>G</span><span>L</span>         
           </h1>
         </header>
         <Main />

@@ -45,6 +45,7 @@ class Main extends Component {
         return (
             <div className='main'>
                 <h3 className='main__h'>Sigils are a powerful way to set your intentions and manifest your desires.</h3>
+                <br></br><br></br>
                 <p className='main__p'>Start by forming a present-tense statement for an intention or affirmation...</p>
                 <p className='main__p'>Write it simply and in positive terms...</p>
                 <br></br>

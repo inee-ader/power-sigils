@@ -2,7 +2,7 @@
 .main {
     background: url(../pictures/dark-rosie-fraser.jpg); 
     padding: 50px;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     height: auto;
 }
@@ -38,6 +38,7 @@
     font-size: 30px;
     font-family: 'Megrim';
     font-weight: bold;
+    /* position: fixed; */
 }
 @media (max-width: 540px) {
     .main__h {

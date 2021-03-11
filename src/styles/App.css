@@ -51,6 +51,51 @@
       margin: 10px;
   }
 }
+.app__h span {
+  transition: 1s;
+}
+.app__h:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+.app__h:hover span:nth-child(1):after {
+  content: 'O';
+}
+
+.app__h:hover span:nth-child(2) {
+  margin-right: 5px;
+}
+.app__h:hover span:nth-child(2):after {
+  content: 'E';
+}
+
+.app__h:hover span:nth-child(3) {
+  margin-right: 5px;
+}
+.app__h:hover span:nth-child(3):after {
+  content: ' ';
+}
+
+.app__h:hover span:nth-child(4) {
+  margin-right: 5px;
+}
+.app__h:hover span:nth-child(4):after {
+  content: 'I';
+}
+
+.app__h:hover span:nth-child(5) {
+  margin-right: 5px;
+}
+.app__h:hover span:nth-child(5):after {
+  content: 'I';
+}
+
+.app__h:hover span:nth-child(6) {
+  margin-right: 5px; 
+}
+.app__h:hover span:nth-child(6):after {
+  content: 'S';
+}
+
 
 .app__footer {
   background-color: #282c34;
