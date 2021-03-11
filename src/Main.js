@@ -60,7 +60,7 @@ class Main extends Component {
                 <button 
                     className='main__button'
                     onClick={() => this.processOutput()}
-                >Process</button>
+                >Reveal</button>
               
                 <button 
                     className='main__button'
