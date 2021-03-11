@@ -6,8 +6,15 @@
     background-attachment: fixed;
     height: auto;
 }
+@media (min-width: 1270px) {
+    .main {
+        padding: 200px;
+        height: auto;
+    }
+}
 @media (min-width: 768px) {
     .main {
+        padding: 100px;
         height: auto;
     }
 }
@@ -129,11 +136,13 @@
 @media (max-width: 540px) {
     .main__button {
         font-size: 20px;
+        margin: 20px;
     }
 }
 @media (max-width: 320px) {
     .main__button {
         font-size: 15px;
+        margin: 10px;
     }
 }
 

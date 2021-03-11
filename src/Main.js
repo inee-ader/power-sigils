@@ -19,8 +19,8 @@ class Main extends Component {
         let string = this.state.input
         let letterObj = {}, 
             newString = '', 
-            regex = /[aeiou\s\W]/i
-        for (let i = 0; i < string.length; i++) {
+            regex = /[aeiou_\s\W\d]/i;        
+            for (let i = 0; i < string.length; i++) {
             let currentChar = string[i].toUpperCase()
             if (!regex.test(currentChar) && !letterObj[currentChar]){
                 newString += currentChar
@@ -57,15 +57,17 @@ class Main extends Component {
                     value={this.state.input} 
                     onChange={this.inputChangeHandler}>
                 </textarea>
-                <button 
-                    className='main__button'
-                    onClick={() => this.processOutput()}
-                >Reveal</button>
-              
-                <button 
-                    className='main__button'
-                    onClick={() => this.startOverHandler()}
-                >Reset</button>
+                <div className='main__button__div'>
+                    <button 
+                        className='main__button'
+                        onClick={() => this.processOutput()}
+                    >Reveal</button>
+                
+                    <button 
+                        className='main__button'
+                        onClick={() => this.startOverHandler()}
+                    >Reset</button>
+                </div>
 
                 <p className='main__p'>...the paramount letters remain</p>
                 <h2 className='main__letters'>
