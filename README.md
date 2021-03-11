@@ -5,7 +5,7 @@
 ## DESCRIPTION
 Sigils are made by writing a phrase or intention down in a statement, and eliminating certain letters until the paramount letters remain. 
 
-You write this statement in present-tense, and in a positive voice (ex: ~~Never doubt myself again~~ **I have self trust**). 
+You write this statement in present-tense, and in a positive voice (ex: ~~Never doubt myself again~~ --> **I have self trust**). 
 
 Then you eliminate all vowels. Then remove all consonants that repeat more than once, leaving the original consonant. 
 
