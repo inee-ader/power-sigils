@@ -140,10 +140,20 @@
     font-family: 'Calligraffitti';
     letter-spacing: 30px;
     font-size: 50px;
-    /* padding: 20px; */
     color: rgba(240, 54, 54, 0.89);
-    display: flex;
-    overflow-x: hidden;
+    display: inline;
     flex-wrap: wrap;
+    overflow-x: hidden;
     justify-content: center;
+    overflow-wrap: break-word;
+}
+@media (max-width: 540px) {
+    .main__letters {
+        font-size: 30px;
+    }
+}
+@media (max-width: 320px) {
+    .main__letters {
+        font-size: 20px;
+    }
 }

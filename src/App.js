@@ -10,7 +10,9 @@ class App extends Component {
       <div className="app">
         <header className="app__header">
           <img src={uranus} className="app__logo" alt="Symbol for Uranus" />
-          <h1 className='app__h'>POWER SIGILS</h1>
+          <h1 className='app__h'>
+            POWER SIGILS
+          </h1>
         </header>
         <Main />
         <footer className='app__footer'>

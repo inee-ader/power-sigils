@@ -34,16 +34,6 @@
   }
 }
 
-.app__footer {
-  background-color: #282c34;
-  padding: 20px;
-  border-top: 2px solid rgba(240, 54, 54, 0.89);
-  color: tan;
-  font-family: 'Megrim';
-  font-weight: bold;
-  font-size: 20px;
-}
-
 .app__h {
   font-size: 60px;
   color: tan; 
@@ -60,4 +50,14 @@
       font-size: 20px;
       margin: 10px;
   }
+}
+
+.app__footer {
+  background-color: #282c34;
+  padding: 20px;
+  border-top: 2px solid rgba(240, 54, 54, 0.89);
+  color: tan;
+  font-family: 'Megrim';
+  font-weight: bold;
+  font-size: 20px;
 }
